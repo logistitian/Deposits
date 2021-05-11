@@ -1,0 +1,9 @@
+/venv/Include/
+/venv/Lib/
+/venv/Scripts/
+/main.py
+/venv/pyvenv.cfg
+/Django_projekts/Django_projekts/asgi.py
+/Django_projekts/Django_projekts/__init__.py
+/Django_projekts/__init__.py
+/Django_projekts/Django_projekts/wsgi.py
