@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All deposits</title>
+</head>
+<body>
+  <ul>
+      {% for i in object_list %}
+
+      <li>
+
+         Deposit: {{ i.deposit }} <br>
+        Term: {{ i.term }} <br>
+          Rate: {{ i.rate }} <br>
+          Interest: {{ i.interest }} <br>
+
+
+      </li>
+
+      {% endfor %}
+
+    </ul>
+<a href="deposit/new">Add New</a>
+
+</p>
+</body>
+</html>
