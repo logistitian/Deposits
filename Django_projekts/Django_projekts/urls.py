@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', deposits.views.DepositView.as_view()),
     path('deposit/new', deposits.views.AddNewDeposit.as_view()),
+    path('deposit/<int:pk>', deposits.views.DepositDetailView.as_view(), name="deposit-detail"),
 ]

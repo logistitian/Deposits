@@ -1,5 +1,5 @@
 from .models import Deposit
-from django.views.generic import FormView, ListView
+from django.views.generic import FormView, ListView, DetailView
 from deposits.forms import AddDeposit
 
 
@@ -20,3 +20,7 @@ class AddNewDeposit(FormView):
 
         return response
 
+
+class DepositDetailView(DetailView):
+    model = Deposit
+    template_name = "deposit_detail.html"

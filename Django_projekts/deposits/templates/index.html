@@ -9,13 +9,13 @@
       {% for i in object_list %}
 
       <li>
-
+ <a href="{% url 'deposit-detail' pk=deposit.id %}">
          Deposit: {{ i.deposit }} <br>
         Term: {{ i.term }} <br>
           Rate: {{ i.rate }} <br>
           Interest: {{ i.interest }}<br>
 
-
+          </a>
       </li>
 
       {% endfor %}
